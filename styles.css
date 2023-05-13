@@ -17,9 +17,9 @@ h1, h2 {
 }
 
 nav {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the navigation links */
-    margin-bottom: 1em; /* Adds some space below the navigation bar */
+    display: flex;
+    justify-content: flex-start; /* Align the navigation links to the left */
+    margin-bottom: 1em;
 }
 
 nav a {
