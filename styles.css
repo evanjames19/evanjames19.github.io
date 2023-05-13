@@ -1,14 +1,27 @@
 body {
-    background: #0f0f23;
+    background: linear-gradient(329deg, #20003f 0%, #0c0022 48%, #0f0f23 100%);
+    background-size: 200% 200%;
+    animation: Gradient 15s ease infinite;
     color: #00ff00;
     font-family: 'Courier New', Courier, monospace;
-    animation: bg-animation 5s infinite;
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 header, main, footer {
     margin: 0 auto;
     max-width: 800px;
     padding: 1em;
+    border-left: 1px solid #00ff00;
+    border-right: 1px solid #00ff00;
+}
+
+h1, h2 {
+    text-shadow: 3px 3px 3px #000000;
 }
 
 a {
@@ -20,7 +33,10 @@ a:hover {
     color: #ffffff;
 }
 
-@keyframes bg-animation {
-    0%, 100% {background-color: #0f0f23;}
-    50% {background-color: #1a1a35;}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #0f0f23;
 }
