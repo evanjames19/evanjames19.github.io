@@ -1,0 +1,26 @@
+body {
+    background: #0f0f23;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    animation: bg-animation 5s infinite;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+}
+
+a {
+    color: #00ff00;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+@keyframes bg-animation {
+    0%, 100% {background-color: #0f0f23;}
+    50% {background-color: #1a1a35;}
+}
