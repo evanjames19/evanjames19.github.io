@@ -1,5 +1,5 @@
 body {
-    background: #ffffff;
+    background: #f0f0f0; /* Light gray background */
     color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,8 +9,6 @@ body {
 header, main, footer {
     margin: 1em;
     padding: 1em;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
     text-align: left; /* Aligns text to the left */
 }
 
@@ -18,12 +16,17 @@ h1, h2 {
     color: #444;
 }
 
-a {
-    color: #444;
-    transition: color 0.5s ease;
+nav {
+    margin: 1em 0; /* Adds some space above and below the navigation links */
 }
 
-a:hover {
+nav a {
+    color: #444;
+    transition: color 0.5s ease;
+    margin: 0 0.5em; /* Adds some space on the left and right of each link */
+}
+
+nav a:hover {
     color: #888;
 }
 
@@ -32,5 +35,5 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: #ffffff;
+    background: #f0f0f0; /* Light gray background */
 }
