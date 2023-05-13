@@ -17,16 +17,38 @@ h1, h2 {
 }
 
 nav {
-    margin: 1em 0; /* Adds some space above and below the navigation links */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navigation links */
+    margin-bottom: 1em; /* Adds some space below the navigation bar */
 }
 
 nav a {
-    text-decoration: none; /* removes the underline */
-    margin-right: 1em; /* adds some space to the right of each link */
+    text-decoration: none;
+    margin: 0 1em; /* Adds some space around each link */
+    color: #444;
+    transition: color 0.3s ease;
+    position: relative; /* Position the navigation links */
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Position the underline below the link */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #444;
+    transform: scaleX(0); /* Start with the underline scaled to zero width */
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline; /* adds the underline back when hovered over */
+    color: #888;
+}
+
+nav a:hover:before {
+    transform: scaleX(1); /* Expand the underline on hover */
 }
 
 
