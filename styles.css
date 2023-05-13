@@ -21,14 +21,14 @@ nav {
 }
 
 nav a {
-    color: #444;
-    transition: color 0.5s ease;
-    margin: 0 0.5em; /* Adds some space on the left and right of each link */
+    text-decoration: none; /* removes the underline */
+    margin-right: 1em; /* adds some space to the right of each link */
 }
 
 nav a:hover {
-    color: #888;
+    text-decoration: underline; /* adds the underline back when hovered over */
 }
+
 
 footer {
     position: fixed;
@@ -44,7 +44,7 @@ footer {
 
 #socials a {
     margin-right: 0.5em; /* adds some space between the links */
-    color: rgb(0, 0, 0); /* changes the color of the icons */
+    color: #000; /* changes the color of the icons to black */
 }
 
 #socials a:hover {
