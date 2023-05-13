@@ -44,11 +44,11 @@ footer {
 
 #socials a {
     margin-right: 0.5em; /* adds some space between the links */
-    color: #444; /* changes the color of the icons */
+    color: rgb(0, 0, 0); /* changes the color of the icons */
 }
 
 #socials a:hover {
-    color: #888; /* changes the color of the icons when hovered over */
+    color: rgb(0, 0, 0); /* changes the color of the icons when hovered over */
 }
 
 #socials i {
