@@ -6,46 +6,41 @@ body {
     padding: 0;
 }
 
-header, main, footer {
+header, footer {
     margin: 1em;
     padding: 1em;
     text-align: left; /* Aligns text to the left */
+    margin-bottom: 1em;
+}
+
+main {
+    margin: 1em;
+    padding-left: 1em;
+    text-align: left; /* Aligns text to the left */
+    margin-bottom: 1em;
 }
 
 h1, h2 {
-    color: #444;
+    color: #000;
 }
 
 nav {
     display: flex;
-    justify-content: flex-start; /* Align the navigation links to the left */
-    margin-bottom: 1em;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
 }
 
 nav a {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent; /* Add a transparent border */
     text-decoration: none;
-    margin: 0 1em; /* Adds some space around each link */
-    color: #444;
-    transition: color 0.3s ease;
-    position: relative; /* Position the navigation links */
-}
+    color: #000;
+  }
 
-nav a:before {
-    content: "";
-    position: absolute;
-    bottom: -2px; /* Position the underline below the link */
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #444;
-    transform: scaleX(0); /* Start with the underline scaled to zero width */
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
 
-nav a:hover {
-    color: #888;
-}
+
 
 nav a:hover:before {
     transform: scaleX(1); /* Expand the underline on hover */
@@ -55,6 +50,7 @@ nav a:hover:before {
 footer {
     position: fixed;
     bottom: 0;
+    padding-top: 5px;
     width: 100%;
     text-align: center;
     background: #f0f0f0; /* Light gray background */
@@ -76,3 +72,34 @@ footer {
 #socials i {
     font-size: 1.5em; /* changes the size of the icons */
 }
+
+/* Rest of the CSS code */
+
+a {
+    color: blue; /* Changes the link color to blue */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
