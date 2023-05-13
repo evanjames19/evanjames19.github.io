@@ -37,3 +37,20 @@ footer {
     text-align: center;
     background: #f0f0f0; /* Light gray background */
 }
+
+#socials {
+    margin-top: 1em; /* adds some space above the links */
+}
+
+#socials a {
+    margin-right: 0.5em; /* adds some space between the links */
+    color: #444; /* changes the color of the icons */
+}
+
+#socials a:hover {
+    color: #888; /* changes the color of the icons when hovered over */
+}
+
+#socials i {
+    font-size: 1.5em; /* changes the size of the icons */
+}
