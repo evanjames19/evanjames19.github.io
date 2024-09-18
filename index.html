@@ -1,47 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Weiss - Biomedical Engineering PhD Candidate</title>
+    <!-- Bootstrap for layout and styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Academicons for academic icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+    <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Evan Weiss</h1>
-        <nav>
-            <a href="index.html">Home</a> 
-            <a href="research.html">Research</a> 
-            <a href="https://github.com/evanjames19" target="_blank">Code</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <!-- Dark mode toggle button -->
-        <button id="darkModeToggle">🌙</button>
-    </header>
-    <main>
-        <section>
-            <p>
-                I am a third year PhD student @ <a href="https://neclab.bme.columbia.edu/">The Laboratory for Neural Engineering and Control</a> at Columbia Universtiy advised by Dr. Qi Wang.
-            </p>
 
-            <p>My current training is in biomedical engineering, specifically in the world of brain-machine interfaces. I am interested in advancing our understanding of neurotechnology, utilizing cutting edge software and devices to unlock the neural mechanisms behind cognition and neurological diseases.</p>
-
-            <p>
-                If you're interested, you can check out some of my research projects on <a href="research.html">this page</a>.
-                Feel free to contact me at <a href="mailto:ew2712@columbia.edu">ew2712@columbia.edu</a> if you have any questions about my work or if you are interested in collaborating!
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p id="copyright">&copy; Evan Weiss. All rights reserved.</p>
-        <p id="datetime"></p>
-        <div id="socials">
-            <a href="https://twitter.com/evannweiss" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/evannweiss" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://scholar.google.com/citations?user=37cynMIAAAAJ" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://www.linkedin.com/in/evannweiss"><i class="fab fa-linkedin"></i></a>
+    <!-- Header with hero image and intro -->
+    <header class="container-fluid bg-light text-center p-5" style="background: url('https://example.com/hero-image.jpg') no-repeat center center; background-size: cover;">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6); padding: 50px;">
+            <h1 class="text-white display-3">Evan Weiss</h1>
+            <p class="text-white lead">PhD Candidate in Biomedical Engineering @ Columbia University</p>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="index.html">Home</a>
+                <a class="nav-link text-white" href="research.html">Research</a>
+                <a class="nav-link text-white" href="https://github.com/evanjames19" target="_blank">Code</a>
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+            </nav>
         </div>
+    </header>
+
+    <!-- Main content section with cards for different topics -->
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">About Me</h2>
+                        <p class="card-text">
+                            I am a third year PhD student @ <a href="https://neclab.bme.columbia.edu/">The Laboratory for Neural Engineering and Control</a> at Columbia University advised by Dr. Qi Wang. 
+                        </p>
+                        <p class="card-text">
+                            My current research focuses on brain-machine interfaces, exploring neural mechanisms behind cognition and neurological diseases.
+                        </p>
+                        <a href="research.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Research Focus</h2>
+                        <p class="card-text">
+                            My research involves investigating how the activation and inhibition of neuromodulatory systems affect neural oscillations, with a particular focus on neurotechnology applications.
+                        </p>
+                        <a href="research.html" class="btn btn-primary">View Research</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-4">
+            <h3>Interested in Collaborating?</h3>
+            <p>Feel free to reach out at <a href="mailto:ew2712@columbia.edu">ew2712@columbia.edu</a>.</p>
+        </div>
+    </main>
+
+    <!-- Footer with social icons -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <p id="datetime" class="mb-3"></p>
+        <div id="socials">
+            <a href="https://twitter.com/evannweiss" target="_blank" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/evannweiss" target="_blank" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+            <a href="https://scholar.google.com/citations?user=37cynMIAAAAJ" target="_blank" class="text-light me-3"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.linkedin.com/in/evannweiss" target="_blank" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="mt-3">&copy; Evan Weiss. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap and JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
