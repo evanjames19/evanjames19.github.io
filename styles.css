@@ -1,107 +1,92 @@
+/* Base theme */
 body {
-    background: #f0f0f0; /* Light gray background */
-    color: #000000;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-header, footer {
-    margin: 1em;
-    padding: 1em;
-    text-align: left; /* Aligns text to the left */
-    /* margin-bottom: 1em; */
-}
-
-main {
-    margin: 1em;
-    padding-left: 1em;
-    text-align: left; /* Aligns text to the left */
-    margin-bottom: 1em;
-    margin-top: 0;
-    flex-grow: 1;
-}
-
-h1, h2 {
-    color: #000;
+h1 {
+    color: #333;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 nav {
     display: flex;
-    justify-content: flex-start;
-    margin-bottom: 0.5em;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 nav a {
-    display: inline-block;
-    padding: 10px;
-    margin: 0 10px;
-    border-bottom: 2px solid transparent; /* Add a transparent border */
     text-decoration: none;
-    color: #000;
-  }
-
-
-
-
-nav a:hover:before {
-    transform: scaleX(1); /* Expand the underline on hover */
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
 
-footer {
-    background-color: #f2f2f2;
+section {
     padding: 20px;
     text-align: center;
-    margin-top: auto;
-  }
-
-#socials {
-    margin-top: 1em; /* adds some space above the links */
 }
 
-#socials a {
-    margin-right: 0.5em; /* adds some space between the links */
-    color: #000; /* changes the color of the icons to black */
-}
-
-#socials a:hover {
-    color: rgb(0, 0, 0); /* changes the color of the icons when hovered over */
-}
-
-#socials i {
-    font-size: 1.5em; /* changes the size of the icons */
-}
-
-/* Rest of the CSS code */
-
-a {
-    color: blue; /* Changes the link color to blue */
-    text-decoration: none; /* Removes the underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-}
-
-.socials-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .grid-item {
+footer {
     text-align: center;
-    font-size: 24px;
-    color: #000;
-    background-color: #fff;
-    padding: 10px;
-  }
-  
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer #socials a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer #socials a:hover {
+    color: #007bff;
+}
+
+/* Dynamic dark mode styles */
+body.dark-mode {
+    background: linear-gradient(to bottom, #333, #111);
+    color: #fff;
+}
+
+body.dark-mode nav a {
+    color: #fff;
+}
+
+body.dark-mode nav a:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+
+body.dark-mode footer {
+    background: #111;
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#darkModeToggle:hover {
+    transform: rotate(20deg);
+}
